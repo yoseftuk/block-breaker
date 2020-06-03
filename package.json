@@ -1,0 +1,22 @@
+{
+  "name": "block-breaker",
+  "version": "1.0.0",
+  "description": "block breaker browser game",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Yosef Tukachinsky",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "tsify": "^4.0.1",
+    "uglifyify": "^5.0.2",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

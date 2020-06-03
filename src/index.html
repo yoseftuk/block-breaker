@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Block Breaker</title>
+    <script src="./index.js" defer></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        canvas {
+            display: block;
+            margin: auto;
+            height: 100vh;
+            background-color: dimgray;
+        }
+        #game-over {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            font-size: 40pt;
+            color: white;
+            font-family: sans-serif;
+            height: 100%;
+            width: 100%;
+            left:0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+            background-color: #000000aa;
+        }
+    </style>
+</head>
+<body>
+<canvas></canvas>
+<p id="game-over" style="display: none"><span>Game Over</span></p>
+</body>
+</html>
