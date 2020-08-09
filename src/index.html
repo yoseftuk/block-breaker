@@ -31,11 +31,41 @@
             padding: 0;
             margin: 0;
             background-color: #000000aa;
+            text-align: center;
+        }
+        #game-over-desc {
+            font-size: 14pt;
+            color: white;
+            font-family: sans-serif;
+        }
+        .arrow {
+            border-radius: 8px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            margin: 4px;
+            background-color: #ffffff88;
         }
     </style>
 </head>
 <body>
 <canvas></canvas>
-<p id="game-over" style="display: none"><span>Game Over</span></p>
+<p id="game-over" style="display: none">
+   <span>
+    <span>Game Over</span><br/>
+    <span id="game-over-desc">Press space to retry</span>
+   </span>
+</p>
+<div id="hints" style="position: fixed; right:0; bottom: 0; color: white; opacity: .8; padding: 20px;">
+    <div id="vis" style="display: flex">
+        <div id="arrow-left" class="arrow">&larr;</div>
+        <div id="arrow-up" class="arrow" style="position: relative; bottom: 30px">&uarr;</div>
+        <div id="arrow-right" class="arrow">&rarr;</div>
+    </div>
+    <div id="hints-desc" style="font-size: 10pt;font-family: sans-serif">use arrows to move<br/>up arrow to speed up</div>
+</div>
 </body>
 </html>
